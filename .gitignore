@@ -1,0 +1,43 @@
+# Python
+venv/
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+.cache/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+
+# Project specific
+backend/venv/
+backend/app/data/attendance_images/
+*.pt
+*.pth
+.env
+.env.local
+
+# Firebase credentials (NEVER commit these!)
+firebase-credentials.json
+backend/firebase-credentials.json
+*firebase-adminsdk*.json

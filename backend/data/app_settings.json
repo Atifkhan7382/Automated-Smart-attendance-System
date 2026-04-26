@@ -1,0 +1,109 @@
+{
+  "useYOLOv8": true,
+  "yolov8Detection": {
+    "confidence": 0.65,
+    "iouThreshold": 0.45,
+    "model": "yolo11n"
+  },
+  "deepfaceRecognition": {
+    "model": "Facenet512",
+    "distanceMetric": "cosine",
+    "similarityThreshold": 0.25,
+    "minConfidence": 0.3
+  },
+  "insightfaceRecognition": {
+    "model": "buffalo_l",
+    "distanceMetric": "cosine",
+    "similarityThreshold": 0.6
+  },
+  "teacherVerification": {
+    "enabled": true,
+    "requireVerificationThreshold": 0.6,
+    "showTopCandidates": 3,
+    "minQualityForLearning": 0.8,
+    "saveFaceCrops": true,
+    "autoApproveAbove": 0.75
+  },
+  "fpsExtraction": 5,
+  "similarityThreshold": 0.5,
+  "useGPU": true,
+  "faceDetection": {
+    "mode": "balanced",
+    "upsampleTimes": 0,
+    "detectionScales": [
+      1.0
+    ],
+    "useCNN": false,
+    "numJitters": 3
+  },
+  "faceRecognition": {
+    "tolerance": 0.45,
+    "minConfidence": 0.4,
+    "strictMode": false,
+    "useAmbiguousDetection": false,
+    "trainingJitters": 10,
+    "trainingModel": "large"
+  },
+  "faceQuality": {
+    "enabled": true,
+    "minBlurScore": 100,
+    "minBrightness": 50,
+    "maxBrightness": 200,
+    "minFaceSize": 80,
+    "minContrast": 20,
+    "rejectThreshold": 0.5,
+    "warningThreshold": 0.7,
+    "weights": {
+      "blur": 0.35,
+      "brightness": 0.25,
+      "size": 0.3,
+      "contrast": 0.1
+    }
+  },
+  "facialLandmarks": {
+    "enabled": true,
+    "model": "68-point",
+    "library": "dlib",
+    "requireFrontalFace": true,
+    "yawThreshold": 15.0,
+    "pitchThreshold": 15.0,
+    "rollThreshold": 15.0,
+    "enableAlignment": false,
+    "detectOcclusion": true,
+    "checkEyeState": true,
+    "checkMouthState": true,
+    "minSymmetryScore": 0.7,
+    "rejectClosedEyes": true,
+    "rejectMasks": true,
+    "eyeAspectRatioThreshold": 0.25,
+    "mouthAspectRatioThreshold": 0.3
+  },
+  "automatedAttendance": {
+    "qualityRetry": {
+      "enabled": true,
+      "maxAttempts": 5,
+      "waitSeconds": 3,
+      "minQualityThreshold": 0.7
+    }
+  },
+  "manualAttendance": {
+    "qualityRejection": {
+      "enabled": true,
+      "minQualityThreshold": 0.7,
+      "strictMode": true,
+      "returnDetailedErrors": true
+    }
+  },
+  "continualLearning": {
+    "enabled": true,
+    "minConfidenceThreshold": 0.75,
+    "minQualityThreshold": 0.8,
+    "maxEncodingsPerStudent": 10,
+    "updateFrequency": "every_attendance",
+    "saveFaceCrops": true,
+    "requireManualApproval": false,
+    "logEncodingAdditions": true,
+    "strictMode": true,
+    "minEncodingConsistency": 0.7
+  }
+}

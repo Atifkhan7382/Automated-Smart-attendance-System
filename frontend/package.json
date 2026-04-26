@@ -1,0 +1,49 @@
+{
+  "name": "attendai-frontend",
+  "version": "1.0.0",
+  "description": "AttendAI - AI-powered attendance management system frontend",
+  "private": true,
+  "dependencies": {
+    "axios": "^1.12.2",
+    "lucide-react": "^0.263.1",
+    "recharts": "^2.12.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.11.0",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.24",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "CI=false npx react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "render-build": "npm install && CI=false npm run build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:8000"
+}

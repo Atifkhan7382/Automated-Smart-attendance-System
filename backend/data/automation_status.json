@@ -1,0 +1,8 @@
+{
+  "is_running": false,
+  "last_run": "2026-02-18T10:50:29.034514",
+  "next_run": null,
+  "total_runs": 30,
+  "successful_runs": 30,
+  "failed_runs": 11
+}

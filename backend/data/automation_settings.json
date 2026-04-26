@@ -1,0 +1,12 @@
+{
+  "enabled": false,
+  "interval_minutes": 1,
+  "class_name": "AI",
+  "camera_source": "0",
+  "quality_retry": {
+    "enabled": true,
+    "max_attempts": 5,
+    "wait_seconds": 3,
+    "min_quality_threshold": 0.7
+  }
+}

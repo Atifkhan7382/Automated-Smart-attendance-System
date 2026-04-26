@@ -1,0 +1,17 @@
+# Minimal API-only build (no heavy CV/ML; recognition features disabled)
+
+fastapi==0.109.2
+uvicorn[standard]==0.27.1
+python-multipart==0.0.9
+pydantic==2.6.4
+email-validator==2.3.0
+
+bcrypt==4.1.2
+python-jose==3.3.0
+python-dotenv==1.0.1
+requests==2.32.3
+
+pandas==2.1.4
+openpyxl==3.1.2
+
+firebase-admin==6.5.0
